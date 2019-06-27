@@ -1,0 +1,98 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+body{
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+a{
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.btn{
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+.bg-light{
+  background: #f4f4f4;
+  color: #333;
+  transition: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
+.bg-light:hover{
+  background: #333;
+  color: #f4f4f4;
+}
+.bg-dark{
+  background: #333;
+  color: #f4f4f4;
+  transition: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
+.bg-dark:hover{
+  background: #f4f4f4;
+  color: #333;
+}
+.l-heading{
+  font-size: 4rem;
+  line-height: 1.2;
+}
+.box{
+  display: flex;
+}
+.box .prev{
+  margin-right: 0.3rem;
+}
+
+.l-start{
+  transform: translateY(-1200px);
+  animation: uptodown 2s forwards ease-in;
+}
+@keyframes uptodown{
+  100%{
+    transform: translateY(0);
+  }
+}
+.p-start{
+  transform: translateX(-1200px);
+  animation: uptodown 2s forwards 1S ease-in;
+}
+
+section{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+section h1{
+  margin-bottom: 1.5rem;
+}
+section p{
+  padding: 1rem 4rem;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+section .btn{
+  margin-top: 1rem;
+}
+#page1{
+  background: steelblue; 
+}
+#page2{
+  background: tan; 
+}
+#page3{
+  background: teal;
+}
+#page4{
+  background: slateblue;
+}
